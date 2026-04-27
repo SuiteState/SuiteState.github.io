@@ -7,13 +7,13 @@
 
 /* ----- Design tokens ----- */
 :root {
-    /* Brand */
-    --teal: #00A09D;
-    --teal-bright: #00C4C0;
-    --teal-deep: #007B79;
-    --ink-deep: #0E1018;
-    --ink-soft: #1A1D2A;
-    --ink-line: #232636;
+    /* Brand — official SuiteState colors */
+    --teal: #11A691;           /* Primary brand color */
+    --teal-bright: #1FC2AB;    /* Lifted variant for highlights / glow */
+    --teal-deep: #0D8170;      /* Deepened variant for hover states */
+    --ink-deep: #1A1A1A;       /* Brand black, primary background */
+    --ink-soft: #242424;       /* Card / block backgrounds */
+    --ink-line: #2E2E2E;       /* Borders, separators */
 
     /* Typography */
     --paper: #F4F1EA;          /* warm off-white, never pure white */
@@ -113,7 +113,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(14, 16, 24, 0.78);
+    background: rgba(26, 26, 26, 0.78);
     backdrop-filter: saturate(180%) blur(14px);
     -webkit-backdrop-filter: saturate(180%) blur(14px);
     border-bottom: 1px solid rgba(244, 241, 234, 0.06);
@@ -182,7 +182,7 @@ body {
 
 .nav-github:hover {
     border-color: var(--teal);
-    background: rgba(0, 160, 157, 0.08);
+    background: rgba(17, 166, 145, 0.08);
 }
 
 @media (max-width: 720px) {
@@ -337,8 +337,8 @@ body {
     width: 100%;
     height: 100%;
     background-image:
-        linear-gradient(rgba(0, 160, 157, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 160, 157, 0.08) 1px, transparent 1px);
+        linear-gradient(rgba(17, 166, 145, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(17, 166, 145, 0.08) 1px, transparent 1px);
     background-size: 48px 48px;
     mask-image: radial-gradient(circle at 60% 50%, black 0%, transparent 65%);
     -webkit-mask-image: radial-gradient(circle at 60% 50%, black 0%, transparent 65%);
@@ -420,14 +420,14 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 0% 0%, rgba(0, 160, 157, 0.08), transparent 60%);
+    background: radial-gradient(circle at 0% 0%, rgba(17, 166, 145, 0.08), transparent 60%);
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
 }
 
 .module-card:hover {
-    border-color: rgba(0, 160, 157, 0.4);
+    border-color: rgba(17, 166, 145, 0.4);
     transform: translateY(-2px);
 }
 
@@ -471,9 +471,9 @@ body {
 }
 
 .badge-live {
-    background: rgba(0, 160, 157, 0.15);
+    background: rgba(17, 166, 145, 0.15);
     color: var(--teal-bright);
-    border: 1px solid rgba(0, 160, 157, 0.3);
+    border: 1px solid rgba(17, 166, 145, 0.3);
 }
 
 .badge-license {
@@ -861,5 +861,28 @@ body {
     .about-meta {
         padding: 1.5rem;
         position: static;
+    }
+}
+
+/* =============================================================
+   LOGO (replaces inline brand-mark SVG)
+   ============================================================= */
+.brand-logo {
+    height: 28px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+.footer-logo {
+    height: 32px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+    .brand-logo {
+        height: 24px;
     }
 }
