@@ -178,6 +178,26 @@ body {
     background: var(--teal-mist);
 }
 
+/* Language switcher */
+.nav-lang {
+    font-family: var(--font-mono) !important;
+    font-size: 0.78rem !important;
+    font-weight: 500 !important;
+    color: var(--ink-muted) !important;
+    padding: 0.3rem 0.55rem !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+    letter-spacing: 0.02em;
+}
+
+.nav-lang:hover {
+    color: var(--teal) !important;
+    border-color: var(--teal) !important;
+    background: var(--teal-mist) !important;
+}
+
 .nav-whatsapp {
     color: #25D366 !important;
 }

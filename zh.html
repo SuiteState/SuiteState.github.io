@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuiteState — Odoo 19 AI &amp; Business Modules | Claude, DeepSeek, WhatsApp AI, Data Guard</title>
-    <meta name="description" content="12 Odoo 19 modules by SuiteState: AI Provider Pool (Claude, DeepSeek, Ollama), WhatsApp AI Customer Service, Serial/IMEI Trace, Data Guard, AI Translate. Free open-source + paid. Built by operators in Dubai.">
-    <meta name="keywords" content="Odoo 19 modules, Odoo AI, Claude Odoo, DeepSeek Odoo, WhatsApp AI chatbot Odoo, Odoo IMEI tracking, Odoo data protection, Odoo apps, SuiteState, Odoo Dubai, Odoo WhatsApp integration, Odoo AI agent, Ollama Odoo">
+    <title>SuiteState — Odoo 19 AI 与业务模块 | Claude、DeepSeek、WhatsApp AI、数据保护</title>
+    <meta name="description" content="SuiteState 提供 12 款 Odoo 19 模块：AI 模型池（Claude、DeepSeek、Ollama）、WhatsApp AI 客服、序列号/IMEI 追踪、数据保护、AI 翻译。免费开源 + 付费。迪拜运营团队出品。">
+    <meta name="keywords" content="Odoo 19 模块, Odoo AI, Claude Odoo, DeepSeek Odoo, WhatsApp AI 客服, Odoo IMEI 追踪, Odoo 数据保护, SuiteState, Odoo 迪拜, Odoo WhatsApp 集成, Odoo AI 代理, Ollama Odoo, Odoo 中文">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="SuiteState — Odoo 19 AI &amp; Business Modules">
-    <meta property="og:description" content="12 Odoo 19 modules: AI Provider Pool (Claude, DeepSeek), WhatsApp AI, Data Guard, Serial Trace, AI Translate. Free + paid. Built by operators.">
-    <meta property="og:url" content="https://suitestate.com">
+    <meta property="og:title" content="SuiteState — Odoo 19 AI 与业务模块">
+    <meta property="og:description" content="12 款 Odoo 19 模块：AI 模型池、WhatsApp AI 客服、数据保护、序列号追踪、AI 翻译。免费 + 付费，运营团队出品。">
+    <meta property="og:url" content="https://suitestate.com/zh">
     <meta property="og:site_name" content="SuiteState">
     <meta property="og:image" content="https://suitestate.com/assets/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SuiteState — Odoo 19 AI &amp; Business Modules">
-    <meta name="twitter:description" content="12 Odoo 19 modules: AI Provider Pool, WhatsApp AI, Data Guard, Serial Trace, AI Translate. Built by operators in Dubai.">
-    <meta name="twitter:image" content="https://suitestate.com/assets/og-image.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
 
     <!-- Hreflang -->
     <link rel="alternate" hreflang="en" href="https://suitestate.com/">
@@ -37,9 +34,14 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        body, .module-desc, .principle-text, .about-body, .section-sub, .hero-lede {
+            font-family: 'Noto Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+    </style>
 </head>
 <body>
 
@@ -48,14 +50,14 @@
     <!-- Navigation -->
     <header class="nav">
         <div class="nav-inner">
-            <a href="/" class="brand" aria-label="SuiteState home">
+            <a href="/zh" class="brand" aria-label="SuiteState home">
                 <img src="/assets/suitestate-logo-dark-text.svg" alt="SuiteState" class="brand-logo">
             </a>
             <nav class="nav-links" aria-label="Primary">
-                <a href="#modules" class="nav-hide-mobile">Modules</a>
-                <a href="#why" class="nav-hide-mobile">How we work</a>
-                <a href="#about" class="nav-hide-mobile">About</a>
-                <a href="/zh" class="nav-lang" title="中文">中</a>
+                <a href="#modules" class="nav-hide-mobile">模块</a>
+                <a href="#why" class="nav-hide-mobile">理念</a>
+                <a href="#about" class="nav-hide-mobile">关于</a>
+                <a href="/" class="nav-lang" title="English">EN</a>
                 <a href="https://github.com/SuiteState" target="_blank" rel="noopener" class="nav-btn">
                     GitHub
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -76,28 +78,28 @@
         <div class="hero-inner">
             <div class="hero-eyebrow reveal" style="--delay: 0ms">
                 <span class="dot"></span>
-                <span>Odoo 19 &middot; Open source &middot; Dubai</span>
+                <span>Odoo 19 &middot; 开源 &middot; 迪拜</span>
             </div>
 
             <h1 class="hero-title reveal" style="--delay: 120ms">
-                Odoo modules<br>
-                from <em>operators</em>.
+                来自<em>实战</em>的<br>
+                Odoo 模块。
             </h1>
 
             <p class="hero-lede reveal" style="--delay: 240ms">
-                We run our own Odoo deployment, build modules to solve the problems we hit,
-                and publish the foundations as open source.
+                我们自己运营 Odoo，遇到问题就写模块解决，
+                然后把基础功能开源发布。
             </p>
 
             <div class="hero-cta reveal" style="--delay: 360ms">
                 <a href="#modules" class="btn-primary">
-                    See our modules
+                    查看模块
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                         <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <a href="https://apps.odoo.com/apps/modules/browse?author=SuiteState" target="_blank" rel="noopener" class="btn-ghost">
-                    Browse on Odoo Apps
+                    Odoo Apps 商店
                 </a>
             </div>
         </div>
@@ -112,24 +114,24 @@
         <div class="section-inner">
             <div class="section-head">
                 <span class="section-label">/ 01</span>
-                <h2 class="section-title">Our modules</h2>
-                <p class="section-sub">12 modules on the Odoo Apps Store. Open-source foundations under LGPL-3, advanced tools under OPL-1.</p>
+                <h2 class="section-title">模块列表</h2>
+                <p class="section-sub">Odoo Apps 商店上架 12 款模块。基础功能以 LGPL-3 开源，高级工具以 OPL-1 授权。</p>
             </div>
 
             <div class="modules-grid">
 
                 <!-- Divider: Free / Open Source -->
-                <div class="modules-divider">Free &middot; LGPL-3</div>
+                <div class="modules-divider">免费 &middot; LGPL-3</div>
 
                 <article class="module-card">
                     <div class="module-card-head">
                         <div class="module-status">
-                            <span class="badge badge-free">Free</span>
+                            <span class="badge badge-free">免费</span>
                             <span class="badge badge-license">LGPL-3</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Bidirectional AI Translate</h3>
-                    <p class="module-desc">Real-time AI translation for Discuss, WhatsApp, and chatter. Translate incoming messages or compose in your language and send the translation.</p>
+                    <h3 class="module-title">双向 AI 翻译</h3>
+                    <p class="module-desc">Discuss、WhatsApp 和 Chatter 的实时 AI 翻译。翻译收到的消息，或用母语撰写后自动翻译发送。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_ai_translate/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -141,12 +143,12 @@
                 <article class="module-card">
                     <div class="module-card-head">
                         <div class="module-status">
-                            <span class="badge badge-free">Free</span>
+                            <span class="badge badge-free">免费</span>
                             <span class="badge badge-license">LGPL-3</span>
                         </div>
                     </div>
-                    <h3 class="module-title">AI Provider Pool</h3>
-                    <p class="module-desc">Multi-provider LLM integration. Supports Anthropic Claude, DeepSeek, and Ollama with tool calling and automatic fallback.</p>
+                    <h3 class="module-title">AI 模型池</h3>
+                    <p class="module-desc">多供应商 LLM 集成。支持 Anthropic Claude、DeepSeek 和 Ollama，具备工具调用和自动回退功能。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_ai_provider_pool/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -158,12 +160,12 @@
                 <article class="module-card">
                     <div class="module-card-head">
                         <div class="module-status">
-                            <span class="badge badge-free">Free</span>
+                            <span class="badge badge-free">免费</span>
                             <span class="badge badge-license">LGPL-3</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Contact Guard</h3>
-                    <p class="module-desc">Enforces phone uniqueness and contact field permissions without disrupting sales workflows.</p>
+                    <h3 class="module-title">联系人保护</h3>
+                    <p class="module-desc">电话号码唯一性验证和联系人字段权限控制，不影响销售日常操作。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_contact_guard/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -175,12 +177,12 @@
                 <article class="module-card">
                     <div class="module-card-head">
                         <div class="module-status">
-                            <span class="badge badge-free">Free</span>
+                            <span class="badge badge-free">免费</span>
                             <span class="badge badge-license">LGPL-3</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Inventory Access Control</h3>
-                    <p class="module-desc">Stock visibility by location for sales reps. Movement history access for accountants. No full warehouse permission needed.</p>
+                    <h3 class="module-title">库存查看权限</h3>
+                    <p class="module-desc">按仓位给销售查看库存，给会计查看出入库记录。无需授予完整仓库权限。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/es_inventory_access/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -192,12 +194,12 @@
                 <article class="module-card">
                     <div class="module-card-head">
                         <div class="module-status">
-                            <span class="badge badge-free">Free</span>
+                            <span class="badge badge-free">免费</span>
                             <span class="badge badge-license">LGPL-3</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Landed Cost Access</h3>
-                    <p class="module-desc">Companion module granting accountants access to landed costs. Requires Inventory Access Control.</p>
+                    <h3 class="module-title">到岸成本查看权限</h3>
+                    <p class="module-desc">配套模块，授予会计到岸成本的查看权限。需配合库存查看权限使用。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_landed_cost_access/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -209,12 +211,12 @@
                 <article class="module-card">
                     <div class="module-card-head">
                         <div class="module-status">
-                            <span class="badge badge-free">Free</span>
+                            <span class="badge badge-free">免费</span>
                             <span class="badge badge-license">LGPL-3</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Consignment Settlement &amp; COGS</h3>
-                    <p class="module-desc">Ledger matching that connects customer invoices to vendor bills with settlement tracking and COGS calculation.</p>
+                    <h3 class="module-title">寄售结算与成本</h3>
+                    <p class="module-desc">客户发票与供应商账单的台账匹配，带结算跟踪和销售成本计算。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_consignment_settlement/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -224,7 +226,7 @@
                 </article>
 
                 <!-- Divider: Paid -->
-                <div class="modules-divider">Paid &middot; OPL-1</div>
+                <div class="modules-divider">付费 &middot; OPL-1</div>
 
                 <article class="module-card module-card--featured">
                     <div class="module-card-head">
@@ -233,8 +235,8 @@
                             <span class="badge badge-price">$249</span>
                         </div>
                     </div>
-                    <h3 class="module-title">AI Customer Service for WhatsApp</h3>
-                    <p class="module-desc">Connects Odoo's native AI Agent to WhatsApp Business. Automated replies powered by your knowledge base, human handoff, conversations dashboard, and per-channel concurrency control. No custom code needed.</p>
+                    <h3 class="module-title">WhatsApp AI 智能客服</h3>
+                    <p class="module-desc">将 Odoo 原生 AI Agent 接入 WhatsApp Business。基于知识库自动回复、人工接管、对话仪表盘、通道级并发控制。无需写代码。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_whatsapp_ai/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -250,8 +252,8 @@
                             <span class="badge badge-price">$199</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Serial / IMEI Trace</h3>
-                    <p class="module-desc">Lightweight IMEI and serial number registry. Record at receipt, match at delivery. Excel import, batch scan, strict or flexible mode, and one-click clear for corrections.</p>
+                    <h3 class="module-title">序列号 / IMEI 追踪</h3>
+                    <p class="module-desc">轻量级 IMEI 和序列号登记。入库登记、出库匹配。支持 Excel 导入、批量扫描、严格/灵活模式，一键清除便于纠错。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_serial_trace/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -267,8 +269,8 @@
                             <span class="badge badge-price">$139</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Data Guard</h3>
-                    <p class="module-desc">Protects delivered sales orders, received purchase orders, invoices, and pickings from accidental edits. Lock date dashboard for accounting periods.</p>
+                    <h3 class="module-title">数据保护</h3>
+                    <p class="module-desc">保护已发货销售单、已收货采购单、发票和拣货单不被误改。会计期间锁定日期仪表盘。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_data_guard/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -284,8 +286,8 @@
                             <span class="badge badge-price">$259</span>
                         </div>
                     </div>
-                    <h3 class="module-title">PO Profit Tracker &amp; Investor Portal</h3>
-                    <p class="module-desc">Gross profit and margin analysis per purchase order with landed cost integration. Portal access for investors and consignors.</p>
+                    <h3 class="module-title">采购利润追踪与投资人门户</h3>
+                    <p class="module-desc">按采购单分析毛利和利润率，集成到岸成本。投资人和寄售方可通过门户查看。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_po_profit/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -301,8 +303,8 @@
                             <span class="badge badge-price">$29</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Consignment Management</h3>
-                    <p class="module-desc">Vendor-owned inventory tracking with consignment moves viewer and settlement workflow.</p>
+                    <h3 class="module-title">寄售管理</h3>
+                    <p class="module-desc">供应商代管库存追踪，寄售出入库查看器和结算流程。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_consignment/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -318,8 +320,8 @@
                             <span class="badge badge-price">$29</span>
                         </div>
                     </div>
-                    <h3 class="module-title">Self-Hosted AI Translate</h3>
-                    <p class="module-desc">Private-deployment translation using DeepSeek, Qwen, or Ollama. 100+ languages, no data leaves your server.</p>
+                    <h3 class="module-title">私有部署 AI 翻译</h3>
+                    <p class="module-desc">使用 DeepSeek、Qwen 或 Ollama 进行翻译。支持 100+ 语言，数据不出服务器。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_self_ai_translate/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -337,38 +339,36 @@
         <div class="section-inner">
             <div class="section-head">
                 <span class="section-label">/ 02</span>
-                <h2 class="section-title">How we work</h2>
-                <p class="section-sub">Three commitments shaped by years of running Odoo ourselves.</p>
+                <h2 class="section-title">我们的理念</h2>
+                <p class="section-sub">多年自营 Odoo 沉淀下来的三个原则。</p>
             </div>
 
             <div class="principles">
                 <div class="principle">
                     <div class="principle-num">01</div>
-                    <h3 class="principle-title">Listen first</h3>
+                    <h3 class="principle-title">先听再做</h3>
                     <p class="principle-text">
-                        Every engagement starts with understanding how a team actually works.
-                        Many Odoo problems are workflow problems pretending to be technical
-                        problems, and the reverse is also common &mdash; we look for the right one
-                        before writing code.
+                        每次合作都从理解团队的实际工作方式开始。
+                        很多 Odoo 问题表面是技术问题，实际是流程问题，反过来也一样。
+                        我们先找准问题再写代码。
                     </p>
                 </div>
 
                 <div class="principle">
                     <div class="principle-num">02</div>
-                    <h3 class="principle-title">Transparent pricing</h3>
+                    <h3 class="principle-title">透明定价</h3>
                     <p class="principle-text">
-                        Open-source modules stay free. Paid work is scoped, fixed, and finished.
-                        Day rates are published and reflect the actual work involved.
+                        开源模块永久免费。付费工作范围明确、价格固定、交付完整。
+                        日费率公开，反映实际工作量。
                     </p>
                 </div>
 
                 <div class="principle">
                     <div class="principle-num">03</div>
-                    <h3 class="principle-title">Compatibility first</h3>
+                    <h3 class="principle-title">兼容优先</h3>
                     <p class="principle-text">
-                        Every module is designed to coexist with native Odoo and other
-                        third-party modules. Standard upgrade paths, no invasive overrides,
-                        and your data remains under your control.
+                        每个模块都设计为与原生 Odoo 和其他第三方模块共存。
+                        标准升级路径，无侵入性覆盖，数据始终在你的掌控之下。
                     </p>
                 </div>
             </div>
@@ -381,41 +381,40 @@
             <div class="about-grid">
                 <div class="about-text">
                     <span class="section-label">/ 03</span>
-                    <h2 class="section-title">About</h2>
+                    <h2 class="section-title">关于我们</h2>
                     <p class="about-lede">
-                        SuiteState is an Odoo modules and consultancy brand,
-                        operated by people who run an Odoo-powered business.
+                        SuiteState 是一个 Odoo 模块与咨询品牌，
+                        由自己运营 Odoo 业务的团队打造。
                     </p>
                     <p class="about-body">
-                        Our parent company is ElectroState FZCO, a B2B wholesale of
-                        refurbished electronics in the Dubai Airport Freezone. Every module
-                        we publish was first built to solve a real problem in our own
-                        deployment. The open-source releases are the parts we believe
-                        other Odoo teams can benefit from.
+                        母公司 ElectroState FZCO 是一家位于迪拜机场自贸区的
+                        B2B 翻新电子产品批发商。我们发布的每一个模块，
+                        都是先为解决自身部署中的实际问题而开发的。
+                        开源发布的部分，是我们认为其他 Odoo 团队也能受益的功能。
                     </p>
                     <p class="about-body">
-                        If a module here saves your team time, that's the goal.
-                        If you need help building something custom, get in touch.
+                        如果这里的模块能为你的团队节省时间，那就是我们的目标。
+                        如果你需要定制开发，欢迎联系。
                     </p>
                 </div>
 
                 <aside class="about-meta">
                     <dl>
                         <div class="meta-row">
-                            <dt>Operated by</dt>
+                            <dt>运营方</dt>
                             <dd>ElectroState FZCO</dd>
                         </div>
                         <div class="meta-row">
-                            <dt>Location</dt>
-                            <dd>Dubai Airport Freezone, UAE</dd>
+                            <dt>所在地</dt>
+                            <dd>阿联酋 迪拜机场自贸区</dd>
                         </div>
                         <div class="meta-row">
-                            <dt>Stack</dt>
+                            <dt>技术栈</dt>
                             <dd>Odoo 19 Enterprise on Odoo.sh</dd>
                         </div>
                         <div class="meta-row">
-                            <dt>We speak</dt>
-                            <dd>English &middot; &#20013;&#25991; &middot; &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</dd>
+                            <dt>沟通语言</dt>
+                            <dd>English &middot; 中文 &middot; العربية</dd>
                         </div>
                         <div class="meta-row">
                             <dt>WhatsApp</dt>
@@ -431,7 +430,7 @@
     <footer class="footer" id="contact">
         <div class="footer-inner">
             <div class="footer-cta">
-                <h2 class="footer-title">Get in touch</h2>
+                <h2 class="footer-title">联系我们</h2>
                 <div class="footer-contact">
                     <a href="mailto:hello@suitestate.com" class="footer-contact-link">
                         hello@suitestate.com
@@ -463,7 +462,7 @@
                 <div class="footer-legal">
                     <span>&copy; 2026 ElectroState FZCO</span>
                     <span class="footer-sep" aria-hidden="true">&middot;</span>
-                    <span>SuiteState is a trading brand</span>
+                    <span>SuiteState 是其商业品牌</span>
                 </div>
             </div>
         </div>
@@ -488,7 +487,7 @@
         "@type": "Organization",
         "name": "SuiteState",
         "url": "https://suitestate.com",
-        "description": "Odoo 19 modules built by operators. AI integration, data protection, serial tracking, and business automation.",
+        "description": "Odoo 19 模块开发商，专注 AI 集成、数据保护、序列号追踪和业务自动化。",
         "parentOrganization": {
             "@type": "Organization",
             "name": "ElectroState FZCO",
@@ -503,52 +502,13 @@
             "@type": "ContactPoint",
             "email": "hello@suitestate.com",
             "telephone": "+971588815345",
-            "contactType": "sales"
+            "contactType": "sales",
+            "availableLanguage": ["English", "Chinese", "Arabic"]
         },
         "sameAs": [
             "https://github.com/SuiteState",
             "https://apps.odoo.com/apps/modules/browse?author=SuiteState"
         ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "AI Customer Service for WhatsApp",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Odoo 19 Enterprise",
-        "offers": {
-            "@type": "Offer",
-            "price": "249",
-            "priceCurrency": "USD"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "SuiteState"
-        },
-        "description": "Connects Odoo native AI Agent to WhatsApp Business. Automated customer service with knowledge base, human handoff, and conversations dashboard."
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "AI Provider Pool: Claude, DeepSeek, Self-Hosted",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Odoo 19 Enterprise",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "SuiteState"
-        },
-        "description": "Adds Anthropic Claude, DeepSeek, and self-hosted OpenAI-compatible providers to Odoo 19 native AI framework. Free and open source."
     }
     </script>
 
