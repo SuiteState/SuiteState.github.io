@@ -472,6 +472,29 @@ body {
     border: 1px solid var(--line);
 }
 
+.badge-price {
+    background: transparent;
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+}
+
+/* Featured module card (flagship product) */
+.module-card--featured {
+    border-color: var(--teal);
+    background: linear-gradient(135deg, rgba(16,160,140,0.03) 0%, var(--bg-card) 60%);
+}
+
+.module-card--featured::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--teal), var(--teal-bright));
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
 .module-title {
     font-family: var(--font-sans);
     font-weight: 600;
