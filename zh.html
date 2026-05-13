@@ -115,7 +115,7 @@
             <div class="section-head">
                 <span class="section-label">/ 01</span>
                 <h2 class="section-title">模块列表</h2>
-                <p class="section-sub">Odoo Apps 商店上架 12 款模块。基础功能以 LGPL-3 开源，高级工具以 OPL-1 授权。</p>
+                <p class="section-sub">Odoo Apps 商店上架 12 款模块。5 款以 LGPL-3 开源，7 款以 OPL-1 授权。</p>
             </div>
 
             <div class="modules-grid">
@@ -181,10 +181,10 @@
                             <span class="badge badge-license">LGPL-3</span>
                         </div>
                     </div>
-                    <h3 class="module-title">库存查看权限</h3>
-                    <p class="module-desc">按仓位给销售查看库存，给会计查看出入库记录。无需授予完整仓库权限。</p>
+                    <h3 class="module-title">销售库存查看</h3>
+                    <p class="module-desc">按仓位给销售团队只读查看在手数量。产品列表增加在手列，支持按用户限制可见仓位。无需仓库用户权限。</p>
                     <div class="module-actions">
-                        <a href="https://apps.odoo.com/apps/modules/19.0/es_inventory_access/" target="_blank" rel="noopener" class="link-arrow">
+                        <a href="https://apps.odoo.com/apps/modules/19.0/suite_inventory_access/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9 L9 3 M9 3 H4 M9 3 V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
                         </a>
@@ -198,8 +198,8 @@
                             <span class="badge badge-license">LGPL-3</span>
                         </div>
                     </div>
-                    <h3 class="module-title">到岸成本查看权限</h3>
-                    <p class="module-desc">配套模块，授予会计到岸成本的查看权限。需配合库存查看权限使用。</p>
+                    <h3 class="module-title">会计到岸成本权限</h3>
+                    <p class="module-desc">独立模块，让会计无需仓库管理员权限即可创建和验证到岸成本。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_landed_cost_access/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
@@ -208,22 +208,6 @@
                     </div>
                 </article>
 
-                <article class="module-card">
-                    <div class="module-card-head">
-                        <div class="module-status">
-                            <span class="badge badge-free">免费</span>
-                            <span class="badge badge-license">LGPL-3</span>
-                        </div>
-                    </div>
-                    <h3 class="module-title">寄售结算与成本</h3>
-                    <p class="module-desc">客户发票与供应商账单的台账匹配，带结算跟踪和销售成本计算。</p>
-                    <div class="module-actions">
-                        <a href="https://apps.odoo.com/apps/modules/19.0/suite_consignment_settlement/" target="_blank" rel="noopener" class="link-arrow">
-                            Odoo Apps
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9 L9 3 M9 3 H4 M9 3 V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                        </a>
-                    </div>
-                </article>
 
                 <!-- Divider: Paid -->
                 <div class="modules-divider">付费 &middot; OPL-1</div>
@@ -266,7 +250,7 @@
                     <div class="module-card-head">
                         <div class="module-status">
                             <span class="badge badge-paid">OPL-1</span>
-                            <span class="badge badge-price">$139</span>
+                            <span class="badge badge-price">$199</span>
                         </div>
                     </div>
                     <h3 class="module-title">数据保护</h3>
@@ -283,7 +267,7 @@
                     <div class="module-card-head">
                         <div class="module-status">
                             <span class="badge badge-paid">OPL-1</span>
-                            <span class="badge badge-price">$259</span>
+                            <span class="badge badge-price">$279</span>
                         </div>
                     </div>
                     <h3 class="module-title">采购利润追踪与投资人门户</h3>
@@ -307,6 +291,23 @@
                     <p class="module-desc">供应商代管库存追踪，寄售出入库查看器和结算流程。</p>
                     <div class="module-actions">
                         <a href="https://apps.odoo.com/apps/modules/19.0/suite_consignment/" target="_blank" rel="noopener" class="link-arrow">
+                            Odoo Apps
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9 L9 3 M9 3 H4 M9 3 V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-card-head">
+                        <div class="module-status">
+                            <span class="badge badge-paid">OPL-1</span>
+                            <span class="badge badge-price">$149</span>
+                        </div>
+                    </div>
+                    <h3 class="module-title">成本可见性控制</h3>
+                    <p class="module-desc">限制仓库和销售用户查看成本价。库存报表员角色，无需管理员权限即可查看报表。覆盖产品、在手库存、估值、批次和出入库分析视图。</p>
+                    <div class="module-actions">
+                        <a href="https://apps.odoo.com/apps/modules/19.0/suite_cost_guard/" target="_blank" rel="noopener" class="link-arrow">
                             Odoo Apps
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9 L9 3 M9 3 H4 M9 3 V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
                         </a>
