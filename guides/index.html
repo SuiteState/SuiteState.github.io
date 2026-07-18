@@ -1,0 +1,36 @@
+---
+layout: base
+lang: en
+title: "Odoo Guides"
+description: "Field notes on Odoo 19 mechanics, verified on live instances: inventory valuation, accounting behaviour, and the operational discipline that keeps the two aligned."
+alt_url: /zh/guides/
+permalink: /guides/
+---
+
+<section class="guides">
+    <div class="guides-inner">
+
+        <header class="guides-head">
+            <div class="guide-eyebrow">
+                <span class="dot"></span>
+                <span>Guides</span>
+            </div>
+            <h1 class="guides-title">Odoo Guides</h1>
+            <p class="guides-sub">Field notes on Odoo 19 mechanics, verified on live instances. Written for the people who have to reconcile the numbers, not for the brochure.</p>
+        </header>
+
+        <div class="guides-grid">
+            {% assign items = site.guides | sort: "date" | reverse %}
+            {% for g in items %}
+            <a href="{{ g.url }}" class="guide-card">
+                <p class="guide-card-eyebrow">{% if g.version %}Odoo {{ g.version }}{% endif %}{% if g.topic %} &middot; {{ g.topic }}{% endif %}{% if g.date %} &middot; {{ g.date | date: "%b %Y" }}{% endif %}</p>
+                <h2 class="guide-card-title">{{ g.title }}</h2>
+                {% if g.description %}<p class="guide-card-desc">{{ g.description | truncate: 190 }}</p>{% endif %}
+            </a>
+            {% else %}
+            <p class="guides-empty">No guides published yet.</p>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

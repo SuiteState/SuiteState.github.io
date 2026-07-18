@@ -1,20 +1,46 @@
+---
+permalink: /sitemap.xml
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://suitestate.com/</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>{{ site.url }}/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}/zh/"/>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://suitestate.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://suitestate.com/zh"/>
   </url>
   <url>
-    <loc>https://suitestate.com/zh</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>{{ site.url }}/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}/zh/"/>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://suitestate.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://suitestate.com/zh"/>
   </url>
-</urlset>
+  <url>
+    <loc>{{ site.url }}/guides/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/zh/guides/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+{% for g in site.guides %}  <url>
+    <loc>{{ site.url }}{{ g.url }}</loc>
+    {% if g.date %}<lastmod>{{ g.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
+    {% if g.alt_url %}<xhtml:link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}{{ g.alt_url }}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ g.url }}"/>{% endif %}
+    <priority>0.7</priority>
+  </url>
+{% endfor %}{% for g in site.guides_zh %}  <url>
+    <loc>{{ site.url }}{{ g.url }}</loc>
+    {% if g.date %}<lastmod>{{ g.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
+    {% if g.alt_url %}<xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ g.alt_url }}"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}{{ g.url }}"/>{% endif %}
+    <priority>0.7</priority>
+  </url>
+{% endfor %}</urlset>

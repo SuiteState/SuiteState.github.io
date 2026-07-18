@@ -1,0 +1,37 @@
+title: SuiteState
+description: Odoo 19 modules and implementation guides.
+url: "https://suitestate.com"
+
+# No plugins are used, so GitHub Pages builds this natively.
+collections:
+  guides:
+    output: true
+    permalink: /guides/:name/
+  guides_zh:
+    output: true
+    permalink: /zh/guides/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: guide
+      lang: en
+  - scope:
+      path: ""
+      type: guides_zh
+    values:
+      layout: guide
+      lang: zh
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - GUIDES.md
+  - Gemfile
+  - Gemfile.lock

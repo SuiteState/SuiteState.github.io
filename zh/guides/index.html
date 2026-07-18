@@ -1,0 +1,36 @@
+---
+layout: base
+lang: zh
+title: "Odoo 指南"
+description: "Odoo 19 机制实录，均在实机环境验证：库存估值、会计行为，以及维持两者一致所需的操作纪律。"
+alt_url: /guides/
+permalink: /zh/guides/
+---
+
+<section class="guides">
+    <div class="guides-inner">
+
+        <header class="guides-head">
+            <div class="guide-eyebrow">
+                <span class="dot"></span>
+                <span>指南</span>
+            </div>
+            <h1 class="guides-title">Odoo 指南</h1>
+            <p class="guides-sub">Odoo 19 机制实录，均在实机环境验证。写给需要对账的人，不是写给宣传册的。</p>
+        </header>
+
+        <div class="guides-grid">
+            {% assign items = site.guides_zh | sort: "date" | reverse %}
+            {% for g in items %}
+            <a href="{{ g.url }}" class="guide-card">
+                <p class="guide-card-eyebrow">{% if g.version %}Odoo {{ g.version }}{% endif %}{% if g.topic %} &middot; {{ g.topic }}{% endif %}{% if g.date %} &middot; {{ g.date | date: "%Y-%m" }}{% endif %}</p>
+                <h2 class="guide-card-title">{{ g.title }}</h2>
+                {% if g.description %}<p class="guide-card-desc">{{ g.description | truncate: 190 }}</p>{% endif %}
+            </a>
+            {% else %}
+            <p class="guides-empty">暂无已发布的指南。</p>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

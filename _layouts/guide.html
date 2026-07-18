@@ -1,0 +1,67 @@
+---
+layout: base
+---
+{%- if page.lang == 'zh' %}{% assign L = 'zh' %}{% else %}{% assign L = 'en' %}{% endif -%}
+{%- if L == 'zh' %}{% assign guides_url = '/zh/guides/' %}{% else %}{% assign guides_url = '/guides/' %}{% endif -%}
+
+<article class="guide">
+    <div class="guide-inner">
+
+        <a href="{{ guides_url }}" class="guide-back">
+            <span aria-hidden="true">&larr;</span>
+            {% if L == 'zh' %}返回指南{% else %}Back to guides{% endif %}
+        </a>
+
+        <header class="guide-head">
+            <div class="guide-eyebrow">
+                <span class="dot"></span>
+                <span>{% if page.version %}Odoo {{ page.version }}{% endif %}{% if page.topic %} &middot; {{ page.topic }}{% endif %}</span>
+            </div>
+            <h1 class="guide-title">{{ page.title }}</h1>
+            {% if page.description %}<p class="guide-lede">{{ page.description }}</p>{% endif %}
+            {% if page.date %}<p class="guide-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>{% endif %}
+        </header>
+
+        <div class="guide-body">
+            {{ content }}
+        </div>
+
+        <aside class="guide-cta">
+            <h2 class="guide-cta-title">{% if L == 'zh' %}需要拆解你自己的差额？{% else %}Need this decomposed on your own system?{% endif %}</h2>
+            <p class="guide-cta-text">
+                {% if L == 'zh' %}
+                SuiteState 提供只读诊断分析，将差额拆解到具体成因与单据。
+                {% else %}
+                SuiteState provides a read-only diagnostic that decomposes the gap into specific causes and documents.
+                {% endif %}
+            </p>
+            <div class="guide-cta-actions">
+                <a href="mailto:hello@suitestate.com" class="guide-cta-btn">{% if L == 'zh' %}邮件联系{% else %}Email us{% endif %}</a>
+                <a href="https://wa.me/971588815345" target="_blank" rel="noopener" class="guide-cta-btn guide-cta-btn--ghost">WhatsApp</a>
+            </div>
+        </aside>
+
+    </div>
+</article>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.description | strip_newlines | jsonify }},
+    "inLanguage": "{% if L == 'zh' %}zh-Hans{% else %}en{% endif %}",
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+    "mainEntityOfPage": {{ site.url | append: page.url | jsonify }},
+    "author": {
+        "@type": "Organization",
+        "name": "SuiteState",
+        "url": "https://suitestate.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "SuiteState",
+        "url": "https://suitestate.com"
+    }
+}
+</script>
