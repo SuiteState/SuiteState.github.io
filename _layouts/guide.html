@@ -19,7 +19,7 @@ layout: base
             </div>
             <h1 class="guide-title">{{ page.title }}</h1>
             {% if page.description %}<p class="guide-lede">{{ page.description }}</p>{% endif %}
-            {% if page.date %}<p class="guide-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>{% endif %}
+            {% if page.date %}<p class="guide-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.updated %} &middot; {% if L == 'zh' %}修订于 {{ page.updated | date: "%Y-%m-%d" }}{% else %}Updated {{ page.updated | date: "%B %-d, %Y" }}{% endif %}{% endif %}</p>{% endif %}
         </header>
 
         <div class="guide-body">
@@ -52,6 +52,7 @@ layout: base
     "description": {{ page.description | strip_newlines | jsonify }},
     "inLanguage": "{% if L == 'zh' %}zh-Hans{% else %}en{% endif %}",
     "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+    "dateModified": "{% if page.updated %}{{ page.updated | date: '%Y-%m-%d' }}{% else %}{{ page.date | date: '%Y-%m-%d' }}{% endif %}",
     "mainEntityOfPage": {{ site.url | append: page.url | jsonify }},
     "author": {
         "@type": "Organization",

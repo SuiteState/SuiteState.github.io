@@ -28,7 +28,9 @@ description: "用于 meta description 与列表页摘要，一到两句。"
 lang: en                      # 中文版写 zh
 version: "19.0"
 topic: "Inventory valuation"  # 列表页与标题区显示
-date: 2026-07-18
+date: 2026-07-18              # 首发日，发布后不再改
+updated: 2026-07-19           # 可选。修订日；填了则文章页显示"修订于"、
+                              # 列表页卡片改显示该日期、sitemap 的 lastmod 取它
 ref: inventory-valuation-gap  # 中英两版必须一致，用于双语互链
 alt_url: /zh/guides/<slug>/   # 指向另一语言版本；中文版写 /guides/<slug>/
 module: suite_data_guard      # 可选，标注相关模块

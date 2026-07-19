@@ -31,14 +31,14 @@ layout: null
   </url>
 {% for g in site.guides %}  <url>
     <loc>{{ site.url }}{{ g.url }}</loc>
-    {% if g.date %}<lastmod>{{ g.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
+    {% assign lm = g.updated | default: g.date %}{% if lm %}<lastmod>{{ lm | date: "%Y-%m-%d" }}</lastmod>{% endif %}
     {% if g.alt_url %}<xhtml:link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}{{ g.alt_url }}"/>
     <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ g.url }}"/>{% endif %}
     <priority>0.7</priority>
   </url>
 {% endfor %}{% for g in site.guides_zh %}  <url>
     <loc>{{ site.url }}{{ g.url }}</loc>
-    {% if g.date %}<lastmod>{{ g.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
+    {% assign lm = g.updated | default: g.date %}{% if lm %}<lastmod>{{ lm | date: "%Y-%m-%d" }}</lastmod>{% endif %}
     {% if g.alt_url %}<xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ g.alt_url }}"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}{{ g.url }}"/>{% endif %}
     <priority>0.7</priority>

@@ -27,7 +27,7 @@ permalink: /zh/guides/
                 {% assign items = grp.items | sort: "date" | reverse %}
                 {% for g in items %}
                 <a href="{{ g.url }}" class="guide-card">
-                    <p class="guide-card-eyebrow">{% if g.topic %}{{ g.topic }}{% endif %}{% if g.date %} &middot; {{ g.date | date: "%Y-%m" }}{% endif %}</p>
+                    <p class="guide-card-eyebrow">{% if g.topic %}{{ g.topic }}{% endif %}{% assign cd = g.updated | default: g.date %}{% if cd %} &middot; {{ cd | date: "%Y-%m" }}{% endif %}</p>
                     <h3 class="guide-card-title">{{ g.title }}</h3>
                     {% if g.description %}<p class="guide-card-desc">{{ g.description | truncate: 190 }}</p>{% endif %}
                 </a>
